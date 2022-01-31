@@ -1,7 +1,7 @@
 {
-    "name": "image-to-base64",
+    "name": "fixed-image-to-base64",
     "version": "2.2.0",
-    "description": "Generate a image to base64.",
+    "description": "Generate a image to base64. Fixed for Safari",
     "main": "image-to-base64.min.js",
     "scripts": {
         "minify:base": "uglifyjs image-to-base64.js -c -m -o image-to-base64.min.js",
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/renanbastos93/image-to-base64.git"
+        "url": "git+https://github.com/GregoryBabonaux/image-to-base64"
     },
     "keywords": [
         "node",
@@ -31,12 +31,12 @@
         "src",
         "img src"
     ],
-    "author": "Renan Bastos - <renanbastos.tec@gmail.com>",
+    "author": "Gregory BABONAUX (legacy of Renan Bastos - <renanbastos.tec@gmail.com>)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/renanbastos93/image-to-base64/issues"
+        "url": "https://github.com/GregoryBabonaux/image-to-base64/issues"
     },
-    "homepage": "https://github.com/renanbastos93/image-to-base64#readme",
+    "homepage": "https://github.com/GregoryBabonaux/image-to-base64#readme",
     "dependencies": {
         "node-fetch": "^2.6.0"
     },

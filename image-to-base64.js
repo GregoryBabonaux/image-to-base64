@@ -5,11 +5,11 @@ var path = require('path');
 var fetch = require('node-fetch');
 
 function validUrl(url) {
-    return /http(s)?:\/\/(\w+:?\w*@)?(\S+)(:\d+)?((?<=\.)\w+)+(\/([\w#!:.?+=&%@!\-/])*)?/gi.test(url);
+  return url.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
 }
 
 function validTypeImage(image) {
-    return /(?<=\S+)\.(jpg|png|jpeg)/gi.test(image);
+  return /\.(jpe?g|png)$/i.test(image)
 }
 
 function base64ToNode(buffer) {
